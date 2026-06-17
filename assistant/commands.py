@@ -9,7 +9,7 @@ from assistant.ai import ask
 def process_command(command):
     print("CLEAN COMMAND:", command)
 
-    # 🌐 Websites
+    # Websites
     if "open google" in command:
         speak("Opening Google")
         webbrowser.open("https://www.google.com")
@@ -35,14 +35,14 @@ def process_command(command):
         webbrowser.open("https://chat.openai.com")
 
     elif "open spotify" in command:
-        speak("Opening Spotify")
+        speak("Opening Spotify, Enjoy your music")
         os.startfile("spotify:")
 
     elif "open whatsapp" in command:
         speak("Opening WhatsApp")
         webbrowser.open("https://web.whatsapp.com")
 
-    # 🎵 Songs
+    # Songs
     elif "play" in command:
         song_query = command.replace("play", "").strip().lower()
 
@@ -54,7 +54,7 @@ def process_command(command):
         else:
             speak("Song not found")
 
-    # 🤖 AI fallback
+    # AI fallback
     else:
         speak("Let me think about that")
         ai_reply = ask(command)

@@ -34,24 +34,24 @@ to execute voice commands and respond intelligently to user queries.
 │── temp_audio/
 │
 ├── assistant/
-│   ├── speech.py
-│   ├── tts.py
-│   ├── commands.py
-│   ├── ai.py
+    ├── speech.py
+    ├── tts.py
+    ├── commands.py
+    ├── ai.py
 
 
 # How to Run
-Install dependencies: pip install speechrecognition edge-tts pygame groq
-Run the project: python main.py
+1) Install dependencies: pip install speechrecognition edge-tts pygame groq
+2) Run the project: python main.py
 
 
 # Workflow
-The system listens for the wake word "nox"
-After activation, it listens for user commands
-Commands are processed in the command handler:
-If matched → executes action (web/music/etc.)
-If not matched → sends request to AI model (Groq LLM)
-Response is converted to speech using TTS engine
+1) The system listens for the wake word "nox"
+2) After activation, it listens for user commands
+3) Commands are processed in the command handler:
+4) If matched → executes action (web/music/etc.)
+5) If not matched → sends request to AI model (Groq LLM)
+6) Response is converted to speech using TTS engine
 
 # Requirements
 Python 3.10+
@@ -70,3 +70,5 @@ ML-based intent classification system
 # Author
 Dhruv Kandwal
 B.Tech CSE (AI/DS Aspirant)
+
+

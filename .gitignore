@@ -1,6 +1,14 @@
+# virtual environment
 venv/
+.venv/
+env/
+pyvenv.cfg
+
+# environment variables
+.env
+
+# cache / runtime files
 __pycache__/
 *.pyc
-.env
-pyvenv.cfg
 temp_audio/
+voice.mp3
