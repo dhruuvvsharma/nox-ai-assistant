@@ -59,7 +59,7 @@ Microphone access
 Active internet connection
 
 # Future Updates:-
-~This project is under active development and is evolving toward a AI powered personal assistant system.
+~This project is under active development and is evolving toward an AI powered personal assistant system.
 
 Plugin-based command system
 Memory system for conversation history
